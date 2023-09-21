@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Resume</title>
+</head>
+<body>
+    <header>
+        <h1>VERYAN L. ARTATES</h1>
+        <p>Web Developer</p>
+    </header>
+    <section class="personal-data">
+        <h2>Personal Data</h2>
+        <ul>
+            <li><strong>Email:</strong> yaniartates@gmail.com</li>
+            <li><strong>CellPhone:</strong> (+63) 916-7411316</li>
+            <li><strong>Address:</strong> San Jose, Tacloban City</li>
+        </ul>
+    </section>
+    <section class="achievements">
+        <h2>Experience</h2>
+        <ul>
+            <li>MIS In-charge and Webmaster for CDA Region VIII.</li>
+            <li>Acting Information Technology Officer (ITO) of CDA Region VIII.</li>
+        </ul>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Node.js, Express</li>
+            <li>Responsive Web Design</li>
+            <li>Version Control (Git)</li>
+        </ul>
+    </section>
+    <section class="education">
+        <h2>Educational Attainments</h2>
+        <ul>
+            <li>
+                <strong>Bachelor in Business Administration major in Management</strong><br>
+                UP in the Visayas Tacloban College<br>
+                Graduated: April 1998
+            </li>
+            
+            <li>
+                <strong>Masters in Information and Technology</strong><br>
+                Eastern Visayas State University<br>
+                November 2021 - present
+            </li>
+        </ul>
+    </section>
+    <section class="training">
+        <h2>Training/Workshops Attended</h2>
+        <ul>
+            <li>
+                <strong>Google Workspace End-User Training Workshops</strong><br>
+                ICTD - CDA <br>
+                Completed: April 2022
+            </li>
+            <li>
+                <strong>Version Control and Collaborative Development Using GIT</strong><br>
+                DICT Region 8<br>
+                Completed: December 14-16, 2022
+            </li>
+        </ul>
+    </section>
+    
+    <!-- Add the "Toggle Contact Info" button here -->
+    <button id="toggle-button">Toggle Contact Info</button>
+
+    <section class="personal-data" id="contact-info">
+        <h2>Personal Data</h2>
+        <ul>
+            <li><strong>Email:</strong> yaniartates@gmail.com</li>
+            <li><strong>CellPhone:</strong> (+63) 916-7411316</li>
+            <li><strong>Address:</strong> San Jose, Tacloban City</li>
+        </ul>
+    </section>
+    
+    <!-- Your JavaScript code here (as provided in the previous responses) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get a reference to the button and contact information
+            const toggleButton = document.getElementById('toggle-button');
+            const contactInfo = document.getElementById('contact-info');
+
+            // Add a click event listener to the button
+            toggleButton.addEventListener('click', function () {
+                // Toggle the visibility of the contact information
+                if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                    contactInfo.style.display = 'block';
+                } else {
+                    contactInfo.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
